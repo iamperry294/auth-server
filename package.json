@@ -1,0 +1,37 @@
+{
+  "name": "auth-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "develop": "nodemon index.js",
+    "format": "prettier --write .",
+    "test:regex": "eslint --plugin vuln-regex-detector --rule '\"vuln-regex-detector/no-vuln-regex\": 2' index.js schemas/user.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "eslint-plugin-vuln-regex-detector": "^1.0.4",
+    "express": "^4.17.3",
+    "express-rate-limit": "^6.3.0",
+    "helmet": "^5.0.2",
+    "hpp": "^0.2.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.3.0",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.6.2",
+    "raw-body": "^2.5.1",
+    "toobusy-js": "^0.5.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.13.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.1.0",
+    "eslint-plugin-promise": "^6.0.0"
+  }
+}
